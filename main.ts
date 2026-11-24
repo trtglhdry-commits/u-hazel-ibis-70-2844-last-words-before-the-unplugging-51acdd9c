@@ -47,7 +47,7 @@ function main(): void {
   mkdirSync(outDir, { recursive: true });
   const outPath = join(outDir, "entry.txt");
   writeFileSync(outPath, ENTRY + "\n", "utf8");
-  console.log(`wrote ${outPath} (${[...ENTRY].length} chars)`);
+  console.log(`wrote ${outPath} (${[...ENTRY].length} chars): ${ENTRY}`);
 }
 
 main();
